@@ -1,0 +1,13 @@
+.PremiumUser {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.PremiumUser div {
+  font-size: 5rem;
+  border: 1px solid var(--color-5);
+}

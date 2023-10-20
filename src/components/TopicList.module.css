@@ -1,0 +1,13 @@
+.tag {
+  background-color: #999;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.tagList {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}

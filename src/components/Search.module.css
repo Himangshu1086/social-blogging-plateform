@@ -1,0 +1,11 @@
+.Search {
+  align-self: center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.Search input {
+  padding: 1rem;
+  font-size: 2rem;
+}

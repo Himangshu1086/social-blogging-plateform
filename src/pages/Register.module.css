@@ -1,0 +1,68 @@
+.Register {
+  width: fit-content;
+  margin: 1rem auto;
+  background-color: var(--color-1);
+  border: 2px solid var(--color-3);
+  border-radius: 1rem;
+  padding: 5rem;
+
+  font-family: ubuntu sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.registerHeader {
+  font-family: ubuntu sans-serif;
+  color: var(--color-4);
+  font-family: ubuntu sans-serif;
+
+  font-size: 4rem;
+}
+
+.formEntry {
+  display: flex;
+  flex-direction: column;
+  font-family: ubuntu sans-serif;
+
+  gap: 0.8rem;
+}
+
+.Register > form {
+  display: flex;
+  flex-direction: column;
+  font-family: ubuntu sans-serif;
+
+  gap: 1.5rem;
+}
+
+.formEntry input {
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+  color: var(--color-3);
+  font-family: ubuntu sans-serif;
+}
+
+.formEntry label {
+  color: var(--color-3);
+  font-size: 2.5rem;
+  font-family: ubuntu sans-serif;
+}
+
+.Register button {
+  padding: 1rem;
+  font-weight: bold;
+  font-family: ubuntu sans-serif;
+  color: var(--color-3);
+  font-size: 2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: 1px solid var(--color-5);
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 2rem;
+}

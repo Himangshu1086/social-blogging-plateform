@@ -1,0 +1,15 @@
+.checkOutProfile {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.followButton {
+  background-color: var(--color-3);
+  padding: 1rem;
+  border-radius: 1rem;
+  align-self: center;
+  font-size: 3rem;
+}

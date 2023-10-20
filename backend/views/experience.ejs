@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practise</title>
+  <link rel="stylesheet" href="/assets2/styles.css">
+</head>
+<body>
+  <nav>
+    <h1><a href="/">Interview Tracker</a></h1>
+    <ul>
+      <% if (user) { %>
+        <li>Welcome, <%= user.email %></li>
+        <li><a href="/logout">Log out</a></li>
+      <% } else { %>
+        <li><a href="/login">Log in</a></li>
+        <li><a href="/signup" class="btn">Sign up</a></li>
+      <% } %>
+
+      <li><a href= "/">Home</a></li>
+    </ul>
+  </nav>
+
+<ul class="recipes">
+
+  <% b.forEach(function(value){ %>
+  <li class="recipe">
+    <img src="<%=value.image%>" alt="<%=value.name%>">
+    <p>Name : <%=value.name%></p>
+    <p>Branch : <%=value.branch%> </p>   
+    <p>Experience : <%= value.exp %></p>
+  </li>
+  <% });%>
+  
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<footer>Copyright 2021 InterviewTracker</footer>
+
+</body>
+</html>

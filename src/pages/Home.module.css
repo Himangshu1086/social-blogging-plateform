@@ -1,0 +1,9 @@
+.Home {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.Home img {
+  border-radius: 4rem;
+}

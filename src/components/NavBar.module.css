@@ -1,0 +1,47 @@
+.NavBar {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-2);
+  color: var(--color-5);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header {
+  padding: 1rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.options {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.login {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: var(--color-1);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.register {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: var(--color-1);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.logout {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: var(--color-1);
+  border-radius: 1rem;
+  cursor: pointer;
+}

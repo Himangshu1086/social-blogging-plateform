@@ -1,0 +1,32 @@
+.User {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.userOptions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.userOptions .link {
+  background-color: var(--color-1);
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-style: 2rem;
+  font-weight: bold;
+  color: var(--color-4);
+}
+
+.userOptions .link:global(.active) {
+  color: black;
+}
+
+.userSection {
+  background-color: var(--color-1);
+  margin-top: 1rem;
+  border-radius: 1rem;
+  padding: 2rem;
+}

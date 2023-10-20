@@ -1,0 +1,7 @@
+.yourPostsItems {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  border-radius: 4rem;
+}

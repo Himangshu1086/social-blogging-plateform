@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="/styles1.css">
+</head>
+<body>
+
+<div class = "interview">
+<ul>
+  <h1 class = "head">INTERVIEW TRACKER</h1>
+ 
+  <ul>
+    <li><div class= "logout"></div> 
+      <a href = "/logout">Logout</a></li>
+<li><a href="/">Home</a></li>
+  </ul>
+  </div>
+</ul>
+</div>
+
+
+<div class="login-page">
+  <div class="form">
+    <form class="register-form"></form>
+     
+   
+      <form class="login-form">
+
+        <input type="text" name= "name" placeholder="Name"/>
+        <input type="text" name ="link" placeholder="Link of Image"/>
+        <input type = "text" name= "branch" placeholder="Branch"/>
+        <input type = "text" name= "company" placeholder="Company"/>
+        <input type = "text" name= "experience" placeholder="Experience"/>
+
+        <button>Add</button>
+        
+      </form>
+    </div>
+  </div>
+
+  
+
+<%- include('partials/footer'); -%>
+
+
+<script>
+    
+    const form = document.querySelector('.login-form');
+    
+  
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+  
+      
+      // get values
+      const name = form.name.value;
+      const image = form.link.value;
+      const branch = form.branch.value;
+      const company = form.company.value;
+      const exp = form.experience.value;      
+  
+      try {
+        const res = await fetch('/addexperience', {
+          method: 'POST',
+          body: JSON.stringify({ name, image , branch , company , exp }),
+          headers: {'Content-Type': 'application/json'} 
+        });
+       if(res){
+         console.log('question added');
+       }else{
+         console.log('question NOT added');
+       } 
+       
+      }
+      catch (err) {
+        console.log(err);
+      }
+    });
+  </script>
+  

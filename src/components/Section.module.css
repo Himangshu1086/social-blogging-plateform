@@ -1,0 +1,27 @@
+.YourPosts {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.yourPostsOptions {
+  display: flex;
+  gap: 1rem;
+
+  margin: auto;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  justify-content: space-around;
+  background-color: var(--color-2);
+
+  border-radius: 5rem 5rem 5rem 5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.ops {
+  color: var(--color-4);
+  font-size: 2rem;
+  align-items: center;
+}

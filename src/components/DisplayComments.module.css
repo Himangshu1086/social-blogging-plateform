@@ -1,0 +1,18 @@
+.comment {
+  background-color: rgb(247, 218, 179);
+  padding: 1rem;
+  border: 1px solid black;
+  width: 80%;
+  border-radius: 1rem;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.displayComments {
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
